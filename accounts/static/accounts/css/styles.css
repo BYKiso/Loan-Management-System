@@ -1,0 +1,181 @@
+/* General Body Styling */
+body {
+    background-color: lightgoldenrodyellow; /* Light Gray */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1a2a6c; /* Dark Blue */
+    padding: 15px 0;
+    display: flex; /* Use flexbox for better layout */
+    justify-content: space-between; /* Align items to opposite ends */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+    color: #fff; /* White logo/brand text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex; /* Make navigation links a flexbox */
+    gap: 20px; /* Space links evenly */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Ensure white color for links */
+    font-weight: 600; /* Bold navigation text */
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e91e63; /* Pink on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Form Box Styling */
+.form-box {
+    background-color: #fff; /* White Background for the form box */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    max-width: 400px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.form-box:hover {
+    box-shadow: 0 6px 15px rgb(0 0 0 / 20%); /* Slightly stronger shadow on hover */
+    transform: scale(1.02); /* Small scaling effect */
+}
+
+/* Form Header Styling */
+.form-box h1 {
+    font-size: 2.5rem; /* Large font size for the title */
+    font-weight: bold;
+    color: #1a2a6c; /* Dark Blue */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input Fields Styling */
+.form-group label {
+    font-weight: 600; /* Bold labels */
+}
+
+.form-control {
+    border-radius: 25px;
+    border: 1px solid #ccc; /* Light border color */
+    padding: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #1a2a6c; /* Dark Blue on focus */
+    box-shadow: 0 0 5px rgb(26 42 108 / 40%);
+}
+
+/* Error Message Styling */
+#error-message {
+    display: none;
+    background-color: #f8d7da; /* Red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #1a2a6c; /* Dark Blue */
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 30px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600; /* Bold button text */
+}
+
+.btn:hover {
+    background-color: #e91e63; /* Pink */
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1a2a6c; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fef2d1; /* Light Yellow */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-weight: 600; /* Bold footer links */
+}
+
+.footer a:hover {
+    color: #e91e63; /* Pink */
+}
+
+/* Responsive Design */
+@media (width <= 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    .form-box h1 {
+        font-size: 2rem;
+    }
+
+    .form-control {
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (width <= 480px) {
+    .form-box {
+        padding: 15px;
+    }
+
+    .form-box h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+.background {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
